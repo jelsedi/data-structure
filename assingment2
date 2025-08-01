@@ -1,0 +1,30 @@
+numbers = input("Enter numbers separated by spaces: ").split()
+int_list = [int(num) for num in numbers]
+print("Sum:", sum(int_list))
+
+
+faveBooks = ("Anabelle" , "all the boys" , "Dooly" , "summer i turned pretty")
+for fave in faveBooks:
+    print(fave)
+
+
+person = {"name": input("Enter your name: "), "age": input("Enter your age: "),
+          "favorite_color": input("Enter your favorite color: ")}
+print(person)
+
+
+
+set1 = set(map(int, input("Enter numbers for set 1: ").split()))
+set2 = set(map(int, input("Enter numbers for set 2: ").split()))
+common = set1 & set2
+print("Common elements:", common)
+
+
+words = ["apple", "cat", "banana", "dog", "hat"]
+odd_length_words = []
+
+for word in words:
+    if len(word) % 2 != 0:
+        odd_length_words.append(word)
+
+print("Words with odd number of letters:", odd_length_words)
